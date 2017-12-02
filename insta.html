@@ -1,0 +1,68 @@
+
+<div ng-controller="instCtrl">
+
+<div ng-repeat="x in accounts" >
+
+
+<div ng-show="x.isLoad" class="row">
+
+
+  <div class="col-sm-4 text-center left-panel" >
+            <div class="well ava-box">
+            <a href="https://instagram.com/{{x.username}}/" target="_blank"> <img src="{{x.avaurl}}" class="img-circle ava-img" alt="loading..."> </a>
+            </div>
+
+            <div class="username-box">
+              <h4><a href="https://instagram.com/{{x.username}}/" target="_blank">@{{x.username}}</a></h4>
+            </div>
+
+          </div>
+
+          <div class="col-sm-8 right-panel">
+            <div class="panel panel-default" >
+
+            <div class="panel-heading">{{$index+1+". "+x.name}}</div>
+      <div class="panel-body text-center"  >
+<h3 ng-if="x.is_private">Это закрытый аккаунт</h3>
+<h3 ng-if="x.is_empty">Нет публикаций</h3>
+        <div class="photo-box text-center" ng-repeat="y in x.photos" >
+          <a href="https://www.instagram.com/p/{{y.link}}" target="_blank">
+<div class="photo-box-img" style="background-image: url('{{y.icon}}');" >
+</div>
+</a>
+        </div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+        </div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+<div class="load-more" ng-click="loadMore();" ng-show="!isLoading.status">
+Еще
+</div>
+
+<div class="spinner" ng-show="isLoading.status">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+
+</div>

@@ -1,0 +1,240 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+
+  .panel-heading{
+    text-align: center;
+
+  }
+
+  .side-left
+  {
+max-height: 150px;
+overflow-y: scroll;
+
+  }
+
+  .side-item{
+    display: inline-block;
+  }
+
+
+  .left-panel {
+  margin-bottom: 5px;
+
+  }
+
+
+}
+
+.photo-box{
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  min-width: 90px;
+  max-width: 240px;
+
+
+  padding: 5px 0px 0px 5px;
+  margin: 0px 5px 5px 0px;
+}
+
+.photo-box img {
+  /*
+height: 100%;
+width: 100%;
+*/
+}
+
+.photo-box-img{
+  width: 100%;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}
+
+
+
+.ava-box{
+  padding: 5px 0 5px 0;
+  margin: 0px;
+  border-radius: 10px 10px 0 0;
+}
+
+.ava-img {
+  height: 120px;
+  width: 120px;
+
+
+}
+
+.username-box {
+  background-color:#d4d4d4;
+  margin: 0;
+  padding: 3px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.left-panel {
+  min-width: 100px;
+  margin-bottom: 20px;
+
+
+}
+
+.right-panel{
+  padding: 0;
+}
+
+.panel-heading
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.panel-body{
+  padding: 10px;
+}
+
+.rate-name
+{
+font-size: 15px;
+overflow: hidden;
+
+}
+.rate-nums{
+font-size: 18px;
+}
+
+.panel-footer-toogler{
+width: 100%;
+padding: 3px;
+text-align: center;
+}
+
+.panel-footer-toogler:hover{
+background-color: #757575;
+border-radius: 8px;
+}
+
+.sidenav, .side-left{
+background-color: #fff;
+padding: 5px;
+}
+
+.side-box{
+  /*position: fixed;*/
+  text-align: center;
+  /*background-color: #b8b7b7;*/
+
+}
+
+.side-item{
+  max-width: 250px;
+  overflow: hidden;
+
+}
+
+
+.load-more{
+width: 50%;
+min-width: 100px;
+margin: auto;
+padding: 6px;
+text-align: center;
+border: 1px solid black;
+border-radius: 8px;
+margin-bottom: 15px;
+font-size: 15px;
+font-weight: bold;
+}
+
+.load-more:hover{
+background-color: #9c9a9a;
+
+}
+
+
+
+.spinner {
+  margin: 20px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}

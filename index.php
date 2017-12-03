@@ -12,6 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
 <link rel="stylesheet" href="main.css">
+<link rel="icon" href="home.ico" type="image/x-icon"/>
 
 </head>
 <body>
@@ -215,7 +216,7 @@ app.config(function($routeProvider) {
   });
 
 
-app.controller("instCtrl", function($scope, $accounts, $timeout) {
+app.controller("instCtrl", function($scope, $accounts) {
 
 $scope.accounts=$accounts.start();
 $scope.isLoading=$accounts.loadingStatus();

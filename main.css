@@ -46,9 +46,8 @@ overflow-y: scroll;
   }
 
 
-  .left-panel {
-  margin-bottom: 5px;
-
+   .left-panel {
+  margin-bottom: 5px !important;
   }
 
 
@@ -57,29 +56,21 @@ overflow-y: scroll;
 .photo-box{
   position: relative;
   display: inline-block;
-  width: 32%;
+  width: 33%;
+  font-size: 0;
+  box-sizing: border-box;
   min-width: 90px;
   max-width: 240px;
+  padding: 4px;
 
-
-  padding: 5px 0px 0px 5px;
-  margin: 0px 5px 5px 0px;
 }
 
-.photo-box img {
-  /*
-height: 100%;
-width: 100%;
-*/
-}
 
 .photo-box-img{
   width: 100%;
   padding-top: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-
-
 }
 
 
@@ -123,18 +114,12 @@ width: 100%;
 }
 
 .panel-body{
-  padding: 10px;
+  padding: 5px;
+  font-size: 0;
 }
 
-.rate-name
-{
-font-size: 15px;
-overflow: hidden;
 
-}
-.rate-nums{
-font-size: 18px;
-}
+
 
 .panel-footer-toogler{
 width: 100%;
